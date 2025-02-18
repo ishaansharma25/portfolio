@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ishaan Sharma - Portfolio</title>
+    <!-- Link your existing CSS files -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediautil.css" />
+    <!-- Add Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- Add AOS for animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav id="desktop-nav">
+      <div class="logo">Ishaan Sharma</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Ishaan Sharma</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- PROFILE SECTION -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="profile-2.png"
+          alt="Ishaan Sharma profile picture"
+          class="about-pic"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hi, I'm</p>
+        <h1 class="title">Ishaan Sharma</h1>
+        <p class="section__text__p2">
+          Full Stack Software Developer👨‍💻<br />
+          Master in Information Technology<br />
+          Rutgers University 
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('Ishaan-Sharma-Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="linkedin.png"
+            alt="LinkedIn"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/isharma25'"
+          />
+          <img
+            src="github.png"
+            alt="GitHub"
+            class="icon"
+            onclick="location.href='https://github.com/isharma25'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <i class="fas fa-user-tie icon"></i>
+              <h3>Profile</h3>
+              <p>
+                A dynamic and versatile IT professional with 6+ years of experience in backend development, API integration, and cloud technologies. Passionate about AI, machine learning, and building scalable software solutions.
+              </p>
+            </div>
+            <div class="details-container">
+              <i class="fas fa-graduation-cap icon"></i>
+              <h3>Education</h3>
+              <p>
+                <ul>
+                  <li>
+                    Master of Information Technology,<br />
+                    Rutgers University–Newark (Expected May 2025)
+                  </li>
+                  <li>
+                    Bachelor of Technology in Electronics,<br />
+                    University of Petroleum and Energy Studies (June 2018)
+                  </li>
+                </ul>
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <h3>Introduction</h3>
+            <p>
+              "With over 6 years of experience in software development, I specialize in designing and implementing end-to-end technical solutions. My expertise lies in backend development, AI integration, and cloud technologies. I am passionate about solving complex problems and delivering results in fast-paced environments."
+            </p>
+            <br>
+            <h3>Key Focus Areas:</h3>
+            <ul>
+              <li>
+                <strong>Backend Development</strong> — Building scalable and efficient microservices using Java, Spring Boot, and Kafka.
+              </li>
+              <li>
+                <strong>AI & Machine Learning</strong> — Integrating AI-driven solutions like Hugging Face and Google AI to automate processes and improve efficiency.
+              </li>
+              <li>
+                <strong>Cloud Technologies</strong> — Leveraging AWS and GCP for deploying and managing cloud-based applications.
+              </li>
+              <li>
+                <strong>API Integration</strong> — Designing and implementing RESTful APIs for seamless system integration.
+              </li>
+            </ul>
+            <h3>Personal Mission</h3>
+            <p>
+              "I am driven by the desire to create innovative solutions that solve real-world problems, streamline processes, and deliver measurable impact."
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      
+      <!-- PROFESSIONAL EXPERIENCE -->
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container" data-aos="fade-up">
+            <h2 class="experience-sub-title">CAR Lab, Rutgers University</h2>
+            <p><strong>Software Engineer (Sep 2024 – Present)</strong></p>
+            <ul>
+              <li>
+                Developed the Rutgers Exam Check Platform with Google AI integration for automated scoring of assignments and quizzes.
+              </li>
+              <li>
+                Single-handedly managed integrations and end-to-end deployment of the BYOC platform (byoc.rutgers.edu).
+              </li>
+            </ul>
+          </div>
+
+          <div class="details-container" data-aos="fade-up">
+            <h2 class="experience-sub-title">PeopleStrong Technologies</h2>
+            <p><strong>Software Development Engineer - 3 (May 2024 – Aug 2024)</strong></p>
+            <ul>
+              <li>
+                Led the development of the AltBuilder No-Code Platform, creating distributed systems using Java, Spring Boot, Kafka, and PostgreSQL.
+              </li>
+              <li>
+                Optimized customer support data processing, improving response times by 70% and reducing payload by 80%.
+              </li>
+              <li>
+                Applied reactive programming patterns to enhance system responsiveness and developer efficiency.
+              </li>
+            </ul>
+          </div>
+
+          <div class="details-container" data-aos="fade-up">
+            <h2 class="experience-sub-title">Oye! Rickshaw</h2>
+            <p><strong>Software Development Engineer - 2 (Jan 2021 – July 2022)</strong></p>
+            <ul>
+              <li>
+                Developed Java-based microservices using Kafka Streams, MQTT, and Redis, supporting ~1 million daily transactions.
+              </li>
+              <li>
+                Built a Delivery Service for client onboarding, fulfillment, and driver payouts, streamlining operations.
+              </li>
+              <li>
+                Designed and implemented a Doctor-Patient healthcare chatbot on SAP BTP Cloud Foundry, improving system efficiency.
+              </li>
+            </ul>
+          </div>
+
+          <div class="details-container" data-aos="fade-up">
+            <h2 class="experience-sub-title">Infosys Limited</h2>
+            <p><strong>Systems Engineer (Oct 2018 – Jan 2021)</strong></p>
+            <ul>
+              <li>
+                Collaborated with the American Express GCP team to migrate and redesign the application from a monolithic to a microservice architecture, enhancing system scalability and maintainability.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- SKILLS SECTION -->
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container" data-aos="fade-up">
+            <h2 class="experience-sub-title">Key Technical Skills</h2>
+            <div class="article-container">
+              <article>
+                <i class="fas fa-code icon"></i>
+                <div>
+                  <h3>Languages</h3>
+                  <p>
+                    Java, Python, JavaScript, C++, Shell Scripting, HTML, CSS
+                  </p>
+                </div>
+              </article>
+              <article>
+                <i class="fas fa-tools icon"></i>
+                <div>
+                  <h3>Tools & Frameworks</h3>
+                  <p>
+                    Spring Boot, Kafka, Docker, Kubernetes, AWS (S3, EC2, Lambda), GCP, REST APIs, AngularTS
+                  </p>
+                </div>
+              </article>
+              <article>
+                <i class="fas fa-brain icon"></i>
+                <div>
+                  <h3>AI & ML</h3>
+                  <p>
+                    Hugging Face, Google AI, Machine Learning, LLM, AI Agents, LangChain, FAISS, Vector Databases
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- Project 1 -->
+          <div class="details-container color-container" data-aos="fade-up">
+            <div class="article-container">
+              <img
+                src="rag_llm.png"
+                alt="Rutgers Exam Check Platform"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              RAG LLM SPRING-AI
+            </h2>
+            <p>
+              Integrated AI Agent with Retrieval-Augmented Generation (RAG) using PostgreSQL and pgvector to enable semantic search and context-aware query responses from document embeddings.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ishaansharma25/RAG_LLM_Spring-AI'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="details-container color-container" data-aos="fade-up">
+            <div class="article-container">
+              <img
+                src="project_Recommendation.png"
+                alt="Place Recommendation System"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Place Recommendation System
+            </h2>
+            <p>
+              Developed a scalable travel recommendation system, PlaceIQ, leveraging AWS S3, Spring Boot microservices, and Neo4j to provide personalized destination suggestions based on traveler preferences.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ishaansharma25/place_recommendation_neo4j'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <i class="fas fa-envelope icon contact-icon"></i>
+          <p><a href="mailto:eshaansharma3@gmail.com">eshaansharma3@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <i class="fab fa-linkedin icon contact-icon"></i>
+          <p>
+            <a href="https://www.linkedin.com/in/isharma25">LinkedIn Profile</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <i class="fas fa-phone icon contact-icon"></i>
+          <p>+1 (332) 251-1600</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p class="footer-text">© 2024 Ishaan Sharma. All rights reserved.</p>
+    </footer>
+
+    <!-- Link your existing script file if any -->
+    <script src="script.js"></script>
+    <!-- Add AOS for animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
